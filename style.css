@@ -1,0 +1,50 @@
+body{
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	background: #081624; 
+}
+
+nav{
+	flex: 1 1 1;
+	align-self: center;
+}
+
+a{
+	font-size: 0.7em;
+	text-decoration: none;
+	padding: 2em;
+	background: #009688;
+	color: rgba(255,255,255,0.8);
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	transform: rotateX(0deg);
+	display: inline-block;
+}
+
+a:hover{
+	animation: animate 0.5s cubic-bezier(0.53, 0.23, 0.61, 1.25) forwards;
+	background: #233140;
+	color: white;
+}
+
+a:first-child{
+	border-radius: 2rem 0 0 2rem;
+	padding-left: 3em;
+	
+}
+
+a:last-child{
+	border-radius: 0 2rem 2rem 0;
+	
+}
+
+@keyframes animate{
+	from{
+		transform: rotateX(0deg);
+	}
+	to{
+		transform: rotateX(360deg);
+	}
+}
